@@ -49,7 +49,7 @@ if($usuario['flg_ativo'] == 'S'){
     
     <p>
         <label>Data Nascimento: </label>
-        <input type="date" value="<?php echo $flagAtivo;?>" name="nData" maxlength="8">
+        <input type="date" value="<?php echo $usuario['data_nasc'];?>" name="nData" maxlength="8">
     </p>
 
     <p>
