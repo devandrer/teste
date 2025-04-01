@@ -10,7 +10,7 @@
     <title>Novo Usuário</title>
 </head>
 <body>
-    <form method="POST" action="php/salvaUsuario.php?opcao=I">
+    <form method="POST" action="php/salvaUsuario.php?opcao=I&id=0" enctype="multipart/form-data">
     
     <p>
         <label>Nome: </label>
@@ -33,6 +33,12 @@
         <label>Senha: </label>
         <input type="password" name="nSenha" maxlength="8" required>
     </p>
+
+    <p>
+        <label>Foto: </label>
+        <input type="file" name="nFoto" accept="imagem/*">
+    </p>
+
     <p>
         <input type="checkbox" name="nAtivo" id="iAtivo">
         <label for="iAtivo">Usuário Ativo </label>
