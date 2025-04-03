@@ -1,4 +1,10 @@
 <?php
+
+use LDAP\Result;
+
+    session_start();
+
+
     //dados do form
     $email = $_POST["nEmail"];
     $senha = $_POST["nSenha"];
@@ -27,6 +33,9 @@
 
     //Validar o retorno
     if(mysqli_num_rows($result) >0){
+        foreach($result as $campo){
+            $_SESSION['tipo_usuario'] = $campo['id_tipo_usuario'];
+        }
         header("location: ../menu.php");
     }else{
         var_dump("Acesso NEGADO");

@@ -29,7 +29,7 @@
         <label>Login: </label>
         <input type="email" name="nLogin" maxlength="60" required>
     </p>
-    <p>
+    <p> 
         <label>Senha: </label>
         <input type="password" name="nSenha" maxlength="8" required>
     </p>
